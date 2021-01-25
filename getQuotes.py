@@ -1,15 +1,8 @@
 import json
-import os
-import sys
 import logging
 import requests
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
-
-# Add vendor directory to module search path
-parent_dir = os.path.abspath(os.path.dirname(__file__))
-libraries_dir = os.path.join(parent_dir, 'libraries')
-sys.path.append(libraries_dir)
 
 API_KEY = "<<<ADD API KEY HERE>>>"
 function = "GLOBAL_QUOTE"
